@@ -11,6 +11,10 @@ html, body {
     font-family: var(--font-family);
 }
 
+h1 {
+    font-size: 36px;
+}
+
 a {
     text-decoration: none;
 }
@@ -25,6 +29,4 @@ button {
 
     /* Style */
     font-family: inherit;
-    font-size: inherit;
-    line-height: inherit;
 }

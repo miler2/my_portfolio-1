@@ -1,1 +1,182 @@
-<p>landpage works!</p>
+<div class="landpage">
+    <div class="landpage_intro">
+        <h1>Bienvenidos a mi página</h1>
+        <p>
+            Esta página web está dedicada a describir mis conocimientos y mostrar mis projectos actuales y futuros.
+            <br><br>
+            Mi currículum también está disponible en inglés
+            <br>
+            Siéntete libre de explorar la página a tu gusto.
+        </p>
+    </div>
+    <div class="landpage_sections">
+        <div class="landpage_section">
+            <h1>Experiencia Laboral</h1>
+            <div class="carousel">
+                <h2>IkosTech Advanced - Administrador de sistemas</h2>
+                <p class="date">Abril 2024 - Junio 2024</p>
+                <h3>{{ items[currentIndex].title }}</h3>
+                <li *ngFor="let item of items[currentIndex].qualities">{{ item }}</li>
+                <div class="carousel_buttons">
+                    <button (click)="prev()" class="button_carousel_left">‹</button>
+                    <button (click)="next()" class="button_carousel_right">›</button>
+                </div>
+            </div>
+        </div>
+        <div class="landpage_section">
+            <h1>Habilidades</h1>
+            <div class="landpage_columns">
+                <div class="column">
+                    <h2>Networking y Sistemas</h2>
+                    <li>Administración y configuración de redes</li>
+                    <li>Ansible</li>
+                    <li>Montaje y mantenimiento de sistemas (ordenadores, servidores...)</li>
+                    <li>Instalación y mantenimiento de Hardware</li>
+                    <li>Troubleshooting</li>
+                </div>
+                <div class="column">
+                    <h2>Development</h2>
+                    <li>Javascript / Typescript</li>
+                    <li>Node.js</li>
+                    <li>Angular</li>
+                    <li>Desarrollo de APIs</li>
+                </div>
+                <div class="column">
+                    <h2>Automación</h2>
+                    <li>n8n</li>
+                    <li>Scripting (Bash, Powershell)</li>
+                </div>
+                <div class="column">
+                    <h2>Soft Skills</h2>
+                    <li>Habilidades de comunicación</li>
+                    <li>Trabajo en Equipo</li>
+                    <li>Resolución eficiente de problemas</li>
+                </div>
+            </div>
+        </div>
+        <div class="landpage_section">
+            <h1>Idiomas</h1>
+            <div class="languages_table_section">
+                <div class="table_wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th colspan="2">Comprensión</th>
+                                <th colspan="2">Expresión Oral</th>
+                                <th>Expresión Escrita</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td>Comprensión auditiva</td>
+                                <td>Comprensión lectora</td>
+                                <td>Producción oral</td>
+                                <td>interacción oral</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>Inglés</th>
+                                <td>C2</td>
+                                <td>C2</td>
+                                <td>C2</td>
+                                <td>C2</td>
+                                <td>C1</td>
+                            </tr>
+                            <tr>
+                                <th>Francés</th>
+                                <td>B1</td>
+                                <td>B1</td>
+                                <td>A2</td>
+                                <td>A2</td>
+                                <td>A1</td>
+                            </tr>
+                            <tr>
+                                <th>Ruso</th>
+                                <td>A1</td>
+                                <td>A1</td>
+                                <td>A1</td>
+                                <td>A1</td>
+                                <td>A1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="landpage_section">
+            <h1>Lenguajes conocidos</h1>
+            <ul class="programming_languages">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript / Typescript</li>
+                <li>Bash</li>
+                <li>Powershell</li>
+                <li>SQL</li>
+                <li>C++</li>
+                <li>GO</li>
+            </ul>
+        </div>
+        <div class="landpage_section">
+            <h1>Proyectos (personales)</h1>
+            <div class="projects">
+                <div class="project">
+                    <h1>Hardware</h1>
+                    <p>Tengo un setup de dos ordenadores en mi casa, siendo montados y mantenidos por mí mismo.</p>
+                    <p>El primero es mi ordenador principal, y el segundo es un dual boot con windows y linux mint para proporcionar servicios desde cloud personal a servidores de juegos.</p>
+                </div>
+                <div class="project">
+                    <h1>Redes</h1>
+                    <p>La red está configurada para la disponivilidad de distintos servicios para uso personal, y de servicios en redes externas, por ejemplo:</p>
+                    <p>Servidores de ofimática, nube personal, servidores de juegos, backups automáticos...</p>
+                </div>
+                <div class="project">
+                    <h1>Software</h1>
+                    <p>De mis proyectos personales de programación tengo desde programación de páginas web como esta, y la de proyectos de aprendizaje como programación de juegos, aplicaciones móvil...</p>
+                    <p>También hago scripts personalizados para realizar copias de seguridad y manejar mi propio hardware entre otros.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer_top">
+            <div class="footer_section footer_informacion_extra">
+                <h2>Información extra</h2>
+                <div>
+                    <div>
+                        <p>Nacionalidad:</p>
+                        <p>Española</p>
+                    </div>
+                    <div>
+                        <p>Residencia:</p>
+                        <p>Almería</p>
+                    </div>
+                    <div>
+                        <p>Disponibilidad de desplacamiento:</p>
+                        <p>Total</p>
+                    </div>
+                    <div>
+                        <p>Carnet de coche:</p>
+                        <p>Si</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_section">
+                <h2>Información de contacto</h2>
+                <div>
+                    <p>Teléfono: (+34) 658489707 (Móvil)</p>
+                    <p>Correo electrónico: miguelangel.a.r2002&#64;gmail.com</p>
+                    <a href="https://www.linkedin.com/in/miguel-almagro-9143a6319">linkedin.com</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <h2>Otros links</h2>
+            <div>
+                <a href="https://github.com/miler2">Mi github</a>
+                <a href="https://github.com/miler2/my_angular_page">Repositorio GitHub de esta página</a>
+            </div>
+        </div>
+    </footer>
+</div>

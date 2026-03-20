@@ -1,4 +1,7 @@
 .navbar {
+    position: sticky;
+    z-index: 1000;  /* Sets importance of component (show in screen before every other thing) */
+
     /* Flexbox */
     display: flex;
     justify-content: space-between;
@@ -7,9 +10,14 @@
     /* Structure */
     height: 45px;
     padding: 10px 5%;
+    padding-top: 3px;
 
     /* Style */
-    background-color: rgb(0, 175, 175);
+    background-color: rgb(255, 255, 255);
+
+    /* Border */
+    border-bottom: 2px solid rgb(0, 0, 0);
+    border-top: 2px solid rgb(0, 0, 0);
 }
 
 .navbar_links {
@@ -43,7 +51,15 @@
 
 a {
     /* Style */
-    color: rgb(238, 238, 238);
+    color: rgb(0, 0, 0);
+}
+
+button {
+    /* Structure */
+    margin-right: 80px;
+
+    /* Style */
+    color: rgb(0, 0, 0);
 }
 
 .theme_image_button{
@@ -53,13 +69,6 @@ a {
 
 .theme_image {
     /* Structure */
-    height: 33px;
-}
-
-button {
-    /* Structure */
-    margin-right: 80px;
-
-    /* Style */
-    color: rgb(238, 238, 238);
+    height: 28px;
+    margin-top: 6px;
 }
