@@ -67,6 +67,7 @@ li {
 
     /* Structure */
     width: 36%;
+    min-width: 700px;
     height: 420px;
 
     /* Border */
@@ -263,6 +264,7 @@ footer {
 
     /* Structure */
     width: 100%;
+    min-width: 1000px;
 }
 
 .footer_section {
@@ -271,7 +273,7 @@ footer {
     justify-content: center;
 
     /* Structure */
-    // padding: 10px 0px 20px 0px;
+    padding: 0px 20px;
     width: 100%;
 
     /* Border */

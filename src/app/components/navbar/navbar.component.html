@@ -1,18 +1,13 @@
-<nav class="navbar">
+<nav>
     <div class="navbar_links">
-        <a routerLink="/" class="home_link">Home</a>
-        <div class="navbar_secondary_links">
+        <a href="/" class="home_link">Home</a>
+        <div>
             <a class="nav_link" href="cv" (click)="update_in_cv()">CV</a>
         </div>
     </div>
     <div>
         <button *ngIf="in_cv" (click)="change_cv_language()" class="nav_link link_on_the_right">
             Cambiar idioma CV
-        </button>
-    </div>
-    <div class="theme_image_button">
-        <button>
-            <!-- <img src="assets/website_theme.png" alt="Website Theme" class="theme_image"> -->
         </button>
     </div>
 </nav>

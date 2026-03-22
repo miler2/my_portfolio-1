@@ -1,5 +1,6 @@
-.navbar {
+nav {
     position: sticky;
+    top: 0;
     z-index: 1000;  /* Sets importance of component (show in screen before every other thing) */
 
     /* Flexbox */
@@ -16,8 +17,7 @@
     background-color: rgb(255, 255, 255);
 
     /* Border */
-    border-bottom: 2px solid rgb(0, 0, 0);
-    border-top: 2px solid rgb(0, 0, 0);
+    border-bottom: 3px solid rgb(0, 0, 0);
 }
 
 .navbar_links {
@@ -35,13 +35,37 @@
     font-size: 30px;
 }
 
-.navbar_secondary_links {
+.navbar_links > div {
     /* Structure */
     margin-left: 80px;
     margin-top: 10px;
 
     /* Style */
     font-size: 18px;
+}
+
+.navbar_links > div > a,
+.navbar_links > a {
+    position: relative;
+}
+
+.navbar_links > div > a::after,
+.navbar_links > a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: -10px;
+    left: 0;
+    border-bottom: 3px solid black;
+
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.25s ease;
+}
+
+.navbar_links > div > a:hover::after,
+.navbar_links > a:hover::after {
+    transform: scaleX(1);
 }
 
 .navbar_secondary_links > a {
