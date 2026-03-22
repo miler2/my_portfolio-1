@@ -1,27 +1,40 @@
-# Miler2
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.8.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.16.
+# This website is my personal CV's exposé
 
-## Development server
+This project is on active development. If you want general documentation for angular, or for how to set up an angular instance you can click [here](https://github.com/miler2/documentation/blob/main/angular.md).
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Useful commands for this project
+This command serves the website locally for all the devices in the local network
+```
+ng serve --host 0.0.0.0
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+This command builds the website into a single folder so that github can load the website with javascript files.
+```
+ng b
+```
 
-## Build
+This version of the command sets the default routing for the website. This specific project does not have a custom url, so the command will look like this:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```
+ng b --base-href="https://miler2.github.io/my_portfolio-1/"
+```
 
-## Running unit tests
+## angular-cli-ghpages
+This is so that I can directly upload my compiled code from the dist/browser folder into the gh-pages branch of my repo and automatically build the page in github.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+To set this up we first need to **install angular-cli-ghpages** to angular:
 
-## Running end-to-end tests
+```
+ng add angular-cli-ghpages
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+This command uploads to my github branch the files with the website and automatically launches the github action to publish the website.
 
-## Further help
+```
+npx angular-cli-ghpages --dir=dist --cname=miler2.com
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+The ```--cname``` tag is added when the url is custom, otherwise you don't have to add the tag.
